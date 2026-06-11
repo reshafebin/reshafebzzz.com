@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reshafebin M.C | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4f46e5,#9333ea);
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:3rem;
+}
+
+.subtitle{
+    font-size:1.3rem;
+    margin-top:10px;
+}
+
+section{
+    max-width:900px;
+    margin:30px auto;
+    padding:30px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(8px);
+    border-radius:20px;
+}
+
+h2{
+    margin-bottom:15px;
+    color:#fff;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:white;
+    color:#4f46e5;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#f1f1f1;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+.dark-mode{
+    background:#111;
+}
+
+.dark-mode section{
+    background:rgba(255,255,255,0.08);
+}
+
+#themeBtn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    border:none;
+    padding:12px 16px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<button id="themeBtn">🌙</button>
+
+<header>
+    <!-- Replace profile.jpg with your image file name -->
+    <img src="profile.jpg" alt="Reshafebin M.C" class="profile-img">
+
+    <h1>Reshafebin M.C</h1>
+
+    <p class="subtitle">
+        B.Sc Physics Graduate | PSMO College Tirurangadi
+    </p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        Hello! I am Reshafebin M.C. I completed my Bachelor of Science
+        in Physics from PSMO College Tirurangadi. I am interested in
+        Physics, Technology, Artificial Intelligence, and Web Development.
+        I enjoy learning new skills and building useful digital projects.
+    </p>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <ul>
+        <li><strong>B.Sc Physics</strong></li>
+        <li>PSMO College Tirurangadi</li>
+        <li>Completed Last Year</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>Physics</li>
+        <li>Computer Basics</li>
+        <li>Web Development</li>
+        <li>Artificial Intelligence Tools</li>
+        <li>Problem Solving</li>
+    </ul>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: resharesh2020@gmail.com</p>
+
+    <a href="mailto:resharesh2020@gmail.com" class="btn">
+        Contact Me
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Reshafebin M.C | All Rights Reserved</p>
+</footer>
+
+<script>
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        themeBtn.innerHTML = "☀️";
+    } else {
+        themeBtn.innerHTML = "🌙";
+    }
+});
+</script>
+
+</body>
+</html>
